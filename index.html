@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>reveal.js – The HTML Presentation Framework</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:200, 400,400i,700,900" rel="stylesheet">
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section data-fullscreen style="height: 100vh !important; width: 100vw !important; border: 0 solid transparent !important;"> 
+				<div class="w100 fixed top right">
+					<p class="heavy ctitle custom white m50 absolute tright top right">Presentació del </br> treball de recerca</p>
+					<img class="fixed maxw60 m0 top right cimage background absolute" src="pic/top-right.png"></img>
+
+				</div>
+				<div style="margin-top: auto; bottom: 0 !important; margin-left: 0;" class="w100 fixed">
+					<p class="custom ctitle white m50 absolute tleft bottom left"><b class="heavy">Institut Manolo Hugué</br>Tutora:</b> Maria Rabadan</p>
+					<img class="background bottom left m0 cimage w100 absolute"  src="pic/bottom.png"></img>
+
+				</div>
+				<div class="title fixed top left" style="margin-top: 200px; margin-left: 150px;">
+					<img class="cimage top left" src="pic/title.svg" />
+				</div>
+					<img class="cimage fixed bottom right"  style="margin-bottom: 300px; margin-right: 250px;" src="pic/authors.svg" />
+
+			</section>
+
+			<section data-fullscreen>
+				<h2 class="diapo-order">1. </h2>
+				<h2 class="diapo-title">Índex</h2>
+				<div class="diapo-content punt-i-mig">
+					Aquí va l'índex.
+				</div>
+			</section>
+			<section data-fullscreen >
+				<h2 class="diapo-order">2. </h2>
+				<h2 class="diapo-title">Objectius</h2>
+				<div class="diapo-content punt-i-mig">
+					Aquí van els objectius.
+				</div>
+			</section>
+			<section data-fullscreen>
+				<h2 class="diapo-order">3. </h2>
+				<h2 class="diapo-title">Introducció</h2>
+				<div class="diapo-content punt-i-mig">
+					Aquí va la introducció.
+				</div>
+			</section>
+			<section data-fullscreen >
+				<h2 class="diapo-order" style="font-size: 1.5em">4. </h2>
+				<h2 class="diapo-title" style="font-size: 1.5em">Història</h2>
+				<iframe style="max-width: 100%; max-height: 100%; left: 0; top: 50px; position: absolute; width: calc(100vw - 40px) !important; height: 100vh !important; margin-top: -50px !important;" data-src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1xuY4upIooEeszZ_lCmeNx24eSFWe0rHe9ZdqH2xqVNk&font=Default&lang=en&initial_zoom=2&height=100%' frameborder='0'></iframe>
+			</section>
+
+			<!-- Example of nested vertical slides -->
+			
+
+		</div>
+
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: false,
+			progress: false,
+			history: true,
+			center: false,
+			width: '100%',
+			height: '100%',
+
+			transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [{
+					src: 'lib/js/classList.js',
+					condition: function () {
+						return !document.body.classList;
+					}
+				},
+				{
+					src: 'plugin/markdown/marked.js',
+					condition: function () {
+						return !!document.querySelector('[data-markdown]');
+					}
+				},
+				{
+					src: 'plugin/markdown/markdown.js',
+					condition: function () {
+						return !!document.querySelector('[data-markdown]');
+					}
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
+				},
+				{
+					src: 'plugin/search/search.js',
+					async: true
+				},
+				{
+					src: 'plugin/zoom-js/zoom.js',
+					async: true
+				},
+				{
+					src: 'plugin/fullscreen/fullscreen.js',
+					async: true
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				}
+			]
+		});
+	</script>
+	<style>
+		.heavy {
+			font-family: Lato, sans-serif !important;
+			font-weight: 800 !important
+		}
+
+		.m0 {
+			margin: 0 !important;
+		}
+
+		.m50 {
+			margin: 3vw !important;
+		}
+
+		.top {
+			top: 0 !important;
+		}
+
+		.bottom {
+			bottom: 0 !important;
+		}
+
+		.right {
+			right: 0 !important;
+		}
+
+		.left {
+			left: 0 !important;
+		}
+
+		.ctitle {
+			font-size: 1.5em !important;
+		}
+
+		.w100 {
+			width: 100vw !important;
+			max-width: 100% !important;
+		}
+
+		.maxw60 {
+			max-width: 60% !important;
+		}
+
+		.fixed {
+			position: absolute !important;
+		}
+
+		.white {
+			color: white !important;
+		}
+
+		.tright {
+			text-align: right !important;
+		}
+
+		.tleft {
+			text-align: left !important;
+		}
+
+		.absolute {
+			position: absolute !important;
+		}
+
+		.cimage {
+			border: none !important;
+			box-shadow: none !important;
+			max-height: unset !important;
+		}
+
+		.background {
+			z-index: -1 !important;
+		}
+
+		@media screen and (width:1024px) {
+			.heavy {
+				font-size: 0.5em !important;
+			}
+		}
+
+		.border-slide {
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			border: 20px solid #f00;
+		}
+		.diapo-order {
+			text-align: left !important;
+			position: relative;
+			top: 100px;
+			left: 100px;
+			font-family: Lato !important;
+			font-weight: 200 !important;
+			color: #D22300 !important;
+		}
+		.diapo-title {
+			position: absolute;
+			top: 100px;
+			left: 170px;
+			font-family: Lato !important;
+			font-weight: 850 !important;
+			color: #D22300 !important;
+		}
+		.diapo-content {
+			position: absolute;
+			top: 200px;
+			margin-left: 170px !important;
+			font-family: Lato !important;
+			text-align: justify !important;
+			width: 80vw;
+		}
+		.punt-i-mig {
+			line-height: 1.5;
+		}
+		section.present {
+			height: calc(100vh - 40px) !important;
+			width: calc(100vw - 40px) !important;
+			border: 20px solid #D22300 !important;
+			padding: 0 !important;
+		}
+	</style>
+</body>
+
+</html>
